@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NALO MENSAJERÍA | La Excelencia hecha Mensajería</title>
+    <style>
+        :root {
+            --primario: #003366; 
+            --secundario: #f1c40f; 
+            --fondo: #f4f7f6;
+            --texto: #2c3e50;
+            --blanco: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0; padding: 0;
+            color: var(--texto);
+            background-color: var(--fondo);
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,51,102,0.85), rgba(0,51,102,0.85)), 
+                        url('https://images.unsplash.com/photo-1580674285054-bed31e145f59?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover; background-position: center;
+            color: white; padding: 90px 20px; text-align: center;
+        }
+
+        header h1 { font-size: 3.5rem; margin: 0; letter-spacing: 4px; }
+        header p { font-size: 1.4rem; color: var(--secundario); font-weight: bold; margin-top: 10px; }
+
+        .menu-botones {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px; max-width: 1200px; margin: -40px auto 40px; padding: 0 20px;
+        }
+
+        .btn-nav {
+            display: flex; align-items: center; justify-content: center;
+            padding: 20px 10px; background: var(--blanco); color: var(--primario);
+            text-decoration: none; border-radius: 8px; font-weight: 800; font-size: 0.8rem;
+            text-transform: uppercase; box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: 0.3s; border-bottom: 4px solid var(--secundario); text-align: center;
+        }
+
+        .btn-nav:hover { transform: translateY(-5px); background: var(--primario); color: var(--blanco); }
+
+        .container { max-width: 1100px; margin: auto; padding: 20px; }
+
+        section {
+            background: var(--blanco); padding: 50px; margin-bottom: 30px;
+            border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h2 { color: var(--primario); border-left: 6px solid var(--secundario); padding-left: 15px; }
+
+        .lista-check { list-style: none; padding: 0; }
+        .lista-check li { margin-bottom: 12px; padding-left: 30px; position: relative; }
+        .lista-check li::before { content: '✓'; position: absolute; left: 0; color: var(--secundario); font-weight: bold; }
+
+        .card-contacto {
+            background: #f9f9f9; padding: 30px; border-radius: 15px;
+            border: 1px solid #eee; text-align: center;
+        }
+
+        .whatsapp-btn {
+            display: inline-block; background: #25d366; color: white;
+            padding: 15px 30px; text-decoration: none; border-radius: 50px;
+            font-weight: bold; margin-top: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .float-ws {
+            position: fixed; width: 60px; height: 60px; bottom: 40px; right: 40px;
+            background-color: #25d366; color: #FFF; border-radius: 50px;
+            text-align: center; font-size: 30px; box-shadow: 2px 2px 3px #999;
+            z-index: 100; display: flex; align-items: center; justify-content: center;
+            text-decoration: none;
+        }
+
+        footer { background: #111; color: white; text-align: center; padding: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>NALO MENSAJERÍA</h1>
+        <p>LA EXCELENCIA HECHA MENSAJERÍA</p>
+    </header>
+
+    <nav class="menu-botones">
+        <a href="#mision-vision" class="btn-nav">Misión y Visión</a>
+        <a href="#ofrecemos" class="btn-nav">Qué Ofrecemos</a>
+        <a href="#beneficios" class="btn-nav">Beneficios</a>
+        <a href="#porque-nosotros" class="btn-nav">¿Por qué nosotros?</a>
+        <a href="#contacto" class="btn-nav">Contacto y Gerencia</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="mision-vision">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div>
+                    <h2>Misión</h2>
+                    <p>Nuestra misión, y seguirá siendo la de satisfacer las necesidades de nuestros clientes, mediante la excelencia del transporte integral; el personal altamente calificado nos da la tranquilidad de ofrecer un servicio de productividad.</p>
+                </div>
+                <div>
+                    <h2>Visión</h2>
+                    <p>La visión de Nalo Mensajería es ser una empresa líder en prestación de servicio eficiente, afianzándonos con el desarrollo y crecimiento de nuestro país.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ofrecemos">
+            <h2>Qué Ofrecemos</h2>
+            <p>Servicio de mensajería o domiciliarios por:</p>
+            <ul class="lista-check">
+                <li>Horas, días, vacaciones y tiempo completo.</li>
+                <li>Diligencias personales y empresariales.</li>
+                <li>Transporte de pequeñas encomiendas.</li>
+            </ul>
+        </section>
+
+        <section id="beneficios" style="background: var(--primario); color: white;">
+            <h2 style="color: white;">Beneficios de su Empresa</h2>
+            <ul class="lista-check">
+                <li>No tendrá que preocuparse por incapacidades ni fallas mecánicas.</li>
+                <li>Personal siempre disponible para sus clientes.</li>
+                <li>Ahorro en tiempo y dinero de prestaciones sociales.</li>
+                <li>Póliza de seguridad contra cualquier eventualidad.</li>
+            </ul>
+        </section>
+
+        <section id="porque-nosotros">
+            <h2>¿Por qué contratar con nosotros?</h2>
+            <ul class="lista-check">
+                <li><strong>Experiencia Directa:</strong> El fundador conoce el campo a fondo con gran experiencia en todo tipo de mensajería.</li>
+                <li><strong>Compromiso Total:</strong> Empresa enfocada en su productividad.</li>
+                <li><strong>Supervisión Continua:</strong> Garantizamos el cumplimiento del servicio.</li>
+                <li><strong>Talento Humano:</strong> Personal motivado y capacitado técnica y humanamente.</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Gerencia y Atención Directa</h2>
+            <div class="card-contacto">
+                <h3>Carlos Andres Urrego Duarte</h3>
+                <p><strong>Gerente General</strong></p>
+                <p>Celular: 314 482 4318</p>
+                <p>Email: Email.nalomensajeria@hotmail.com</p>
+                <a href="https://wa.me/573144824318" class="whatsapp-btn">Enviar Mensaje Directo al Gerente</a>
+            </div>
+        </section>
+    </div>
+
+    <a href="https://wa.me/573144824318" class="float-ws"><span>💬</span></a>
+
+    <footer>
+        <p><strong>NALO MENSAJERÍA</strong> - La Excelencia hecha Mensajería</p>
+        <p>© 2026 | Atención Personalizada</p>
+    </footer>
+
+</body>
+</html>
